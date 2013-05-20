@@ -2,6 +2,7 @@ require 'json'
 require 'sinatra/base'
 require 'bson'
 require 'rest-client'
+require 'nokogiri'
 
 module FTHackathon
   DataStore = "shared"
@@ -23,11 +24,13 @@ module FTHackathon
     #    ]
     # end
 
+
     # creation of docs
     post "/share" do
       data = JSON.parse(request.body.read)
+      p data
       id = Mongo.upsert(FTHackathon::DataStore,data)
-      response.header['Location'] = "/#{id.to_s}"
+      response.header['Location'] = "/shift/shared/#{id.to_s}"
       id.to_s
     end
 
@@ -39,16 +42,54 @@ module FTHackathon
       docs = Mongo.find(FTHackathon::DataStore,{"_id" => obj_id}).to_a
       if docs.size == 0
         puts "No luck"
-        return 403
+        404
+      else
+        # Parse into JSON
+        shared = docs[0]
+        # fetch from API
+        url = "http://api.ft.com/content/items/v1/#{shared['articleId']}"
+        resp = RestClient.get url, :params => {:apiKey => '74ceebd2d62ad1e882862db317e2fb95', :aspects => 'body,summary,title,editorial' }
+        # body = JSON.parse(resp.body)
+        puts "Called #{url}"
+        puts "Got #{JSON.pretty_generate(JSON.parse(resp.to_s))}"
+
+        attr = JSON.parse(resp.to_s)
+
+        # get html content
+        doc = Nokogiri::HTML(attr['item']['body']['body'])
+
+        # extract the paragraphs we need
+        paras = shared['paras'].map{|entry| doc.css("p[#{entry}]").to_html  }
+
+        # wrap them in divs for ease of styling
+        output = paras.map{|content| 
+          "<div>#{content}</div>"
+        }.join("\n")
+
+        rendered_response=<<-EOS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>#{attr['item']['title']['title']}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="#{attr['item']['summary']['excerpt']}" />
+    <meta name="author" content="#{attr['item']['editorial']['byline']}" />
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+        #{ output }
+</body>
+</html>
+EOS
+        rendered_response
       end
-      # Parse into JSON
-      shared = docs[0]
-      # fetch from API
-      url = "http://api.ft.com/content/items/v1/#{shared['articleId']}.json"
-      resp = RestClient.get url, :params => {:apiKey => '74ceebd2d62ad1e882862db317e2fb95', :aspects => 'body,summary,title' }
-      # body = JSON.parse(resp.body)
-      puts "Called #{url}"
-      body.to_s
     end
   end
 end
+
+__END__
+Expected format of incoming query POST /shift/share
+  {articleId: "xyz", paras: [1,2,3] } -> mongo id (200)
+
+Expected format of incoming query GET /shift/shared/:id
+  return stored json from POST /shift/share or 404 on error
