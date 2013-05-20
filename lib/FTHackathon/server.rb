@@ -1,5 +1,6 @@
 require 'json'
 require 'sinatra/base'
+require 'bson'
 
 module FTHackathon
   class Server < Sinatra::Base
@@ -23,7 +24,15 @@ module FTHackathon
     end
 
     get "/:id"  do 
-      params[:id]
+      # Need to check we have a valid objectid :-)
+      id = params[:id]
+      obj_id = BSON::ObjectId(id)
+      docs = Mongo.find("shared",{ "_id" => obj_id}).to_a
+      if docs.size == 0
+        puts "No luck"
+      else
+        puts docs[0]
+      end
     end
   end
 end
