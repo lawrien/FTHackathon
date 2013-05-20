@@ -1,18 +1,28 @@
 $(function() {
 
+    var shareLink = '';
     var chosenParaIndexes = [0,1,2];
 
-    $('#ftHackShare').click(function() {
+    function init() {
 
-        share();
+        $('#ftHackShare').click(function() {
 
-    });
+            share();
+
+        });
+
+        $('#ftHackSharePanel .twitter-share').click(function() {
+
+            fetchSharableLink();
+
+        });
+
+    }
+    init();
 
     function share() {
 
         updateSharePanel();
-
-        updateShareButtons();
 
         updateFades();
 
@@ -58,6 +68,7 @@ $(function() {
 
     }
 
+    /*
     function updateShareButtons() {
 
         $('.twitter-share-button', $sharePanelEl).attr('href', 'https://twitter.com/share?count=none&text='+' original: ');
@@ -71,6 +82,7 @@ $(function() {
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
     }
+    */
 
     function updateFades() {
 
@@ -82,6 +94,47 @@ $(function() {
             $('#storyContent p:eq('+ paraIndex + ')').removeClass('fade');
 
         }
+
+    }
+
+    function fetchSharableLink() {
+
+        var dataValues = {
+            'articleId': articleUUID,
+            'paras': chosenParaIndexes
+        };
+
+        $.ajax({
+            url: '/share',
+            type: 'post',
+            data: dataValues,
+            success: function(data) {
+
+                console.log('data', data);
+
+                shareLink = data;
+                twitterShare();
+
+            },
+            error: function() {
+                console.log('Error');
+            }
+        });
+
+    }
+
+    function twitterShare() {
+
+        var width = 650,
+            height = 450,
+            left = Math.round( screen.width / 2 - width / 2 ),
+            top = Math.round( screen.height / 2 - height / 2 );
+
+        var text = document.title + ' ' + shareLink;
+
+        window.open('https://twitter.com/intent/tweet?original_referer=&text='+text, // URL
+            undefined, // window name
+            'width='+width+',height='+height+',left='+left+',top='+top ); // window features
 
     }
 
