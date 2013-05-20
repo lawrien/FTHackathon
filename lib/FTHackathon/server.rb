@@ -21,5 +21,9 @@ module FTHackathon
       id.to_s
       # params.to_json
     end
+
+    get "/:id"  do 
+      params[:id]
+    end
   end
 end
