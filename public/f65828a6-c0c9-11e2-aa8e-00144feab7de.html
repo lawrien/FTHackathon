@@ -88,16 +88,20 @@
         }());
     </script>
     <script src="//s4.media.ft.com/opentag/opentag-27295-31253.js"></script>
-    <script src="http://s2.ft-static.com/scripts/653b359d/bundles/renderHead.js"></script>
+    <!-- FTHACK -->
+    <!--<script src="http://s2.ft-static.com/scripts/653b359d/bundles/renderHead.js"></script>-->
     <!-- New tracking module, supercedes ft-tracking and si-tracking -->
-    <script src="http://s2.ft-static.com/scripts/63262fcd/bundles/tracking.js"></script>
+    <!--<script src="http://s2.ft-static.com/scripts/63262fcd/bundles/tracking.js"></script>-->
+    <!--
     <noscript>
         <img alt="" border="0" width="1" height="1"
              src="http://track.ft.com/track/track.js?javascript=disabled"/>
         <img alt="" border="0" width="1" height="1"
              src="http://stats.ft.com/si/track.gif?WT.js=No"/>
     </noscript>
+    -->
     <!-- FT Advertising code -->
+    <!--
     <script>
         (function () {
             var version = 'latest',
@@ -118,8 +122,11 @@
             document.write('\x3Clink rel="stylesheet" media="all" href="' + urlStem + '.css' + query + '" \/>');
         }());
     </script>
+    -->
     <!-- New brightcove module, contains the libraries and FT wrappers as well -->
+    <!--
     <script src="http://s2.ft-static.com/scripts/b2a8e928/bundles/brightcove.js"></script>
+    -->
     <!-- FTHACK -->
     <script src="js/fthack.js"></script>
     <style>
@@ -143,10 +150,16 @@
         .container .editorialSection p.fade a {
             color: #ccc;
         }
+        .ftLogin-loggedIn {
+            display: block !important;
+        }
+        .ftLogin-loggedOut {
+            display: none !important;
+        }
     </style>
 </head>
 <body data-uid="700004bc-f97b-11df-9e29-00144feab49a"
-      data-article-uid="f65828a6-c0c9-11e2-aa8e-00144feab7de" class="nojs ">
+      data-article-uid="f65828a6-c0c9-11e2-aa8e-00144feab7de"> <!-- FTHACK --> <!-- class="nojs ">
 
 <!-- FTHACK -->
 <div id="fb-root"></div>
@@ -238,10 +251,10 @@
             </div>
             <div class="ftLogin-loggedIn">
 <span>
-Welcome <span id="ftLogin-user"></span>
-<span id="ftLogin-sub-link"><a
+Welcome <span id="ftLogin-user"><!-- FTHACK --> peter.oshaughnessy@pearson.com</span>
+<!--<span id="ftLogin-sub-link"><a
         href="http://registration.ft.com/registration/subscription-service/bpsp?segid=70152"
-        class="subscriptionLink">Subscribe</a></span>
+        class="subscriptionLink">Subscribe</a></span>-->
 <a href="http://registration.ft.com/registration/selfcare/"
    id="ftLogin-yourAccount">Your account</a>
 <a href="http://www.ft.com/tour">Site tour</a>
@@ -2240,35 +2253,28 @@ last-child nosub ">
         <div class="doublet">
             <div class="doublet-column" data-pos="1">
                 <div class="doublet-content">
-                    <h4><a href="http://blogs.ft.com/fttechhub" class="label"><span>Tech blog</span></a>
-                    </h4>
-    <span class="story-image">
-    <a href="http://blogs.ft.com/fttechhub">
-        <img src="http://im.ft-static.com/content/images/cbf8acfc-5cbb-11e1-ac80-00144feabdc0.img"
-             alt="Tech Hub"/>
-    </a>
-    </span>
+                    <h4><a href="http://blogs.ft.com/fttechhub" class="label"><span>Tech blog</span></a></h4>
+<span class="story-image">
+<a href="http://blogs.ft.com/fttechhub">
+    <img src="http://im.ft-static.com/content/images/cbf8acfc-5cbb-11e1-ac80-00144feabdc0.img" alt="Tech Hub">
+</a>
+</span>
                     <a href="http://blogs.ft.com/fttechhub">
                         <span class="content">FT experts around the world share their views</span>
                     </a>
-                </div>
-            </div>
+                </div>	</div>
             <div class="doublet-column" data-pos="2">
                 <div class="doublet-content">
-                    <h4>
-                        <a href="http://blogs.ft.com/fttechhub/category/personal-technology/"
-                           class="label"><span>Personal Technology</span></a></h4>
-    <span class="story-image">
-    <a href="http://blogs.ft.com/fttechhub/category/personal-technology/">
-        <img src="http://im.ft-static.com/content/images/3456e264-3067-11e0-8d80-00144feabdc0.img"
-             alt="Chris Nuttall"/>
-    </a>
-    </span>
+                    <h4><a href="http://blogs.ft.com/fttechhub/category/personal-technology/" class="label"><span>Personal Technology</span></a></h4>
+<span class="story-image">
+<a href="http://blogs.ft.com/fttechhub/category/personal-technology/">
+    <img src="http://im.ft-static.com/content/images/3456e264-3067-11e0-8d80-00144feabdc0.img" alt="Chris Nuttall">
+</a>
+</span>
                     <a href="http://blogs.ft.com/fttechhub/category/personal-technology/">
                         <span class="content">Chris Nuttall reviews the latest trends in tech</span>
                     </a>
-                </div>
-            </div>
+                </div>	</div>
         </div>
     </div>
     <script>FT.$doc.trigger("pgObjStop", {key: "15"});</script>
@@ -2282,29 +2288,11 @@ last-child nosub ">
                 </a>
             </h3>
         </div>
-        <noscript>
-            <div class="railMiniVideo-player-nojs">
-                You need JavaScript active on your browser in order see this video.
-            </div>
-        </noscript>
         <div class="railMiniVideo-player" style="height:365px">
             <!-- Start of Brightcove Player -->
             <div style="display:none">
             </div>
-            <object id="myExperience" class="BrightcoveExperience">
-                <param name="bgcolor" value="#00000"/>
-                <param name="width" value="332"/>
-                <param name="height" value="365px"/>
-                <param name="playerID" value="1820439059001"/>
-                <param name="publisherID" value="46412932001"/>
-                <param name="isVid" value="true"/>
-                <param name="isUI" value="true"/>
-                <param name="dynamicStreaming" value="true"/>
-                <param name="@videoList" value="ref:companies"/>
-                <param name="playerKey"
-                       value="AQ~~,AAAACxbljZk~,eD0zYozylZ2BGOo7AxcJk7QiRt45zQkF"/>
-                <param name="wmode" value="transparent"/>
-            </object>
+            <object type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=332&amp;height=365px&amp;flashID=myExperience&amp;bgcolor=%2300000&amp;playerID=1820439059001&amp;publisherID=46412932001&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;%40videoList=ref%3Acompanies&amp;playerKey=AQ~~%2CAAAACxbljZk~%2CeD0zYozylZ2BGOo7AxcJk7QiRt45zQkF&amp;wmode=transparent&amp;autoStart=&amp;debuggerID=&amp;startTime=1369068364932" id="myExperience" width="332" height="365px" class="BrightcoveExperience" seamlesstabbing="undefined"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="transparent"><param name="quality" value="high"><param name="bgcolor" value="#00000"></object>
             <!-- End of Brightcove Player -->
             <script>
                 BrightcoveFT.Init.createExperience('myExperience');
