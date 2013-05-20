@@ -110,12 +110,14 @@ $(function() {
             data: dataValues,
             success: function(data) {
 
+                console.log('data', data);
+
                 shareLink = data;
                 twitterShare();
 
             },
             error: function() {
-                alert('Error');
+                console.log('Error');
             }
         });
 
@@ -123,16 +125,16 @@ $(function() {
 
     function twitterShare() {
 
-        var width = 550,
-            height = 520,
+        var width = 650,
+            height = 450,
             left = Math.round( screen.width / 2 - width / 2 ),
-            top = 0;
+            top = Math.round( screen.height / 2 - height / 2 );
 
-        window.open('https://twitter.com/intent/tweet?original_referer=&text=%20original%3A…%2F%2Fwww.ft.com%2Fcms%2Fs%2F0%2Ff65828a6-c0c9-11e2-aa8e-00144feab7de.html', // URL
+        var text = document.title + ' ' + shareLink;
+
+        window.open('https://twitter.com/intent/tweet?original_referer=&text='+text, // URL
             undefined, // window name
             'width='+width+',height='+height+',left='+left+',top='+top ); // window features
-
-        //'https://twitter.com/intent/tweet?original_referer=&text=%20original%3A…%2F%2Fwww.ft.com%2Fcms%2Fs%2F0%2Ff65828a6-c0c9-11e2-aa8e-00144feab7de.html'
 
     }
 
