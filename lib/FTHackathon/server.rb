@@ -3,7 +3,10 @@ require 'sinatra/base'
 require 'bson'
 
 module FTHackathon
+  DataStore = "shared"
+
   class Server < Sinatra::Base
+    use Rack::Static, :urls => ["/img", "/js", "/css"], :root => "public"
     enable :dump_errors
     start = Time.now.to_f
 
@@ -13,21 +16,30 @@ module FTHackathon
     end
 
     get "/" do
-      {:results => "Hello world!"}.to_json
-    end
+      [
+        200,
+        {
+          'Content-Type'  => 'text/html',
+          'Cache-Control' => 'public, max-age=86400'
+        },
+        File.open('public/aa11044c-c126-11e2-9767-00144feab7de.html', File::RDONLY)
+      ]
+   end
 
-    post "/share" do
+  # creation of docs
+   post "/share" do
       data = JSON.parse(request.body.read)
-      id = Mongo.upsert("shared",data)
+      id = Mongo.upsert(FTHackathon::DataStore,data)
+      response.header['Location'] = "/#{id.to_s}"
       id.to_s
-      # params.to_json
     end
 
-    get "/:id"  do 
+    # retreival of docs
+    get "/shared/:id"  do
       # Need to check we have a valid objectid :-)
       id = params[:id]
       obj_id = BSON::ObjectId(id)
-      docs = Mongo.find("shared",{ "_id" => obj_id}).to_a
+      docs = Mongo.find(FTHackathon::DataStore,{"_id" => obj_id}).to_a
       if docs.size == 0
         puts "No luck"
       else
