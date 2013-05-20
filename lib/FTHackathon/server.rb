@@ -10,21 +10,16 @@ module FTHackathon
     enable :dump_errors
     start = Time.now.to_f
 
-    # global before filter
-    before /.*/ do
-      content_type :json
-    end
-
-    get "/" do
-      [
-        200,
-        {
-          'Content-Type'  => 'text/html',
-          'Cache-Control' => 'public, max-age=86400'
-        },
-        File.open('public/aa11044c-c126-11e2-9767-00144feab7de.html', File::RDONLY)
-      ]
-   end
+   #  get "/" do
+   #    [
+   #      200,
+   #      {
+   #        'Content-Type'  => 'text/html',
+   #        'Cache-Control' => 'public, max-age=86400'
+   #      },
+   #      File.open('public/aa11044c-c126-11e2-9767-00144feab7de.html', File::RDONLY)
+   #    ]
+   # end
 
   # creation of docs
    post "/share" do
