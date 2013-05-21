@@ -39,3 +39,11 @@
 .story-package {
 	background-color: #fff1e0;
 }
+
+
+#ftHackShare {
+	background:url(/img/share_button.png) no-repeat;
+	width: 186px;
+	height: 55px;
+
+}
