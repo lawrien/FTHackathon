@@ -1,0 +1,41 @@
+#ftHackSharePanel {
+	display: none;
+}
+#ftHackSharePanel .contents {
+	padding: 10px;
+}
+#ftHackSharePanel h5 {
+	font-size: 1.1em;
+	margin: 1em 0;
+}
+#ftHackSharePanel .shareButtons {
+	padding: 0 10px;
+}
+#ftHackSharePanel p {
+	margin-bottom: 1em;
+}
+#storyContent.shareMode p {
+	/*color: #ccc;*/
+	background-color: rgb(255, 255, 200);
+}
+#storyContent.shareMode p.fade,
+#storyContent.shareMode p.fade a {
+	/*color: #ccc;*/
+	background-color: #fff1e0;
+}
+#storyContent.shareMode p:first-child,
+#storyContent.shareMode p.fade:first-child {
+	/*color: #ccc;*/
+	background-color: rgb(255, 255, 200);
+}
+
+.ftLogin-loggedIn {
+	display: block !important;
+}
+.ftLogin-loggedOut {
+	display: none !important;
+}
+
+.story-package {
+	background-color: #fff1e0;
+}
