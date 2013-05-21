@@ -75,9 +75,44 @@ module FTHackathon
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="#{attr['item']['summary']['excerpt']}" />
     <meta name="author" content="#{attr['item']['editorial']['byline']}" />
+    <style>
+      html {
+        background-color: #fff1e0;
+        color: black;
+        font-family: "Helvetica", "Arial", sans-serif;
+      }
+
+      h1 {
+        margin: 25px 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 10px;
+        font-size: 18px;
+      }
+
+      p:last-child {
+        color: #888;
+        font-size: 16px;
+      }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
-        #{ output }
+      <div class="suHeaderLeftImage">
+        <a href="http://www.ft.com">
+          <img id="logbco" width="138" height="70" alt="Financial Times" src="http://www.ft.com/Common/Subscription/images/ftlogo2.gif"></img>
+        </a>
+      </div>
+
+      <h1>#{attr['item']['title']['title']}</h1>
+
+      #{ output }
+
+      <p>
+        <a href="http://www.ft.com/cms/s/0/#{shared['articleId']}"> Read the full article at FT.com</a>
+      </p>
 </body>
 </html>
 EOS
