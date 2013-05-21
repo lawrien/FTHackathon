@@ -23,6 +23,8 @@ function share() {
 
     updateFades();
 
+    $('#storyContent').addClass('shareMode');
+
     $('.container .editorialSection p').mouseover(function() {
 
         var paraIndex = $('#storyContent').find('p').index(this);
