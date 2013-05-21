@@ -126,7 +126,7 @@ function fetchSharableLink() {
 
             console.log('data', data);
 
-            shareLink = 'http://localhost:9292/shift/shared/' + data;
+            shareLink = 'http://shift.com/shift/shared/' + data;
             twitterShare();
 
         },
