@@ -1,0 +1,721 @@
+diff --git a/public/aa11044c-c126-11e2-9767-00144feab7de.html b/public/aa11044c-c126-11e2-9767-00144feab7de.html
+index 44c2503..70f40c5 100644
+--- a/public/aa11044c-c126-11e2-9767-00144feab7de.html
++++ b/public/aa11044c-c126-11e2-9767-00144feab7de.html
+@@ -18,7 +18,7 @@
+ <meta property="og:url" content="http://www.ft.com/cms/s/0/aa11044c-c126-11e2-9767-00144feab7de.html"/>
+ <meta property="og:site_name" content="Financial Times"/>
+ <meta property="og:description" content="The independent board of Eurasian Natural Resources Corp has rejected a proposed offer by the embattled London-listed miner’s billionaire founding shareholders to take it private. Alexander Mashkevich, Alijan Ibragimov and Pathokh Chodiev made their"/>
+-<meta property="og:image" content="http://im.ft-static.com/m/img/social/og-ft-logo.png"/> 
++<meta property="og:image" content="http://im.ft-static.com/m/img/social/og-ft-logo.png"/>
+ <meta property="fb:page_id" content="8860325749" />
+ <!-- END OF OPEN GRAPH TAGS -->
+ <link rel='stylesheet' href='http://s1.ft-static.com/m/style/bd4ee473/bundles/core.css' media="all" />
+@@ -37,7 +37,7 @@ siteMapTerm = 'Sections.Mining';
+ navEdition = 'UK';
+ brandName = '';
+ primaryThemeName = 'Eurasian Natural Resources Corp PLC';
+-</script> 
++</script>
+ <script>
+ FT.env = {
+ "site" : "ftcom",
+@@ -69,70 +69,39 @@ if (d.length > 2)
+ document.domain = d[d.length-2]+'.'+d[d.length-1];
+ }());
+ </script>
+-<script src="//s4.media.ft.com/opentag/opentag-27295-31253.js"></script>
+-<script src="http://s2.ft-static.com/scripts/653b359d/bundles/renderHead.js"></script>
+-<!-- New tracking module, supercedes ft-tracking and si-tracking -->
+-<script src="http://s2.ft-static.com/scripts/63262fcd/bundles/tracking.js"></script>
+-<noscript>
+-<img alt="" border="0" width="1" height="1" src="http://track.ft.com/track/track.js?javascript=disabled"/>
+-<img alt="" border="0" width="1" height="1" src="http://stats.ft.com/si/track.gif?WT.js=No"/>
+-</noscript>
+-<!-- FT Advertising code -->
+-<script>
+-(function () {
+-var version = 'latest',
+-urlStem = '//www.ft.com/m/advertising/',
+-timestamp = new Date(),
+-query = '?t=' + timestamp.getFullYear() + '-' + (timestamp.getMonth() + 1) + '-' + timestamp.getDate();
+-if (FT) {
+-if (FT.env && FT.env.advertising) {
+-version = FT.env.advertising;
+-query = '';
+-}
+-if (FT.Properties && FT.Properties.ADVERTISING_BASE) {
+-urlStem = FT.Properties.ADVERTISING_BASE;
+-}
+-}
+-urlStem = urlStem + 'advertising-' + version+ '.min';
+-document.write('\x3Cscript src="' + urlStem + '.js' + query + '">\x3C\/script>');
+-document.write('\x3Clink rel="stylesheet" media="all" href="' + urlStem + '.css' + query + '" \/>');
+-}());
+-</script>
+-<!-- New brightcove module, contains the libraries and FT wrappers as well -->
+-<script src="http://s2.ft-static.com/scripts/b2a8e928/bundles/brightcove.js"></script>
++<!-- FTHACK -->
++<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
++<script src="js/fthack.js"></script>
++<link rel='stylesheet' href='css/fthack.css' media="all"/>
+ </head>
+-<body data-uid="68bca5d6-f96f-11df-a4a5-00144feab49a" data-article-uid="aa11044c-c126-11e2-9767-00144feab7de" class="nojs ">
+-<script>FT.$doc.trigger("pgObjStart", {key: "perceivedLoadTime"});</script>
+-<!-- Methode uuid: "aa11044c-c126-11e2-9767-00144feab7de" -->
+-<!-- BuildLife: "PROD 152298" -->
+-<!-- Session Id: "" -->
+-<!-- Date: "2013-05-14:10:35:16GMT" -->
+-<!-- Revision: "${SVN.REVISION} " -->
+-<!-- Version: "NewAHP " -->
+-<script>
+-FT.preInit.setBodyClass(navigator);
+-</script>
++<body data-uid="68bca5d6-f96f-11df-a4a5-00144feab49a" data-article-uid="aa11044c-c126-11e2-9767-00144feab7de">
++
++<!-- FTHACK -->
++<div id="fb-root"></div>
++<script>(function(d, s, id) {
++    var js, fjs = d.getElementsByTagName(s)[0];
++    if (d.getElementById(id)) return;
++    js = d.createElement(s); js.id = id;
++    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
++    fjs.parentNode.insertBefore(js, fjs);
++}(document, 'script', 'facebook-jssdk'));</script>
++
+ <div id="fullpage-container"></div>
+ <div class="introAd">
+-<script>
+-FT.ads.request('intro');
+-</script>
+ </div>
+ <div class="clearfix container" id="page-container">
+ <div class="master-row topSection" data-zone="topSection" data-timer-key="1">
+-<script>FT.$doc.trigger("pgObjStart", {key: "1", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "2", keyType: "el"});</script>
+ <div id="header" class="clearfix" data-comp-name="header" data-comp-view="header" data-comp-index="0" data-timer-key="2" >
+ <div id="page-title">
+ <div class="bar section">
+ <a class="heading hidden" href="http://www.ft.com"><img src="http://im.ft-static.com/m/img/masthead_print.gif" alt="Financial Times" /></a>
+-<p class="bc"> 
++<p class="bc">
+ <a href="http://www.ft.com">ft.com</a>
+ <span> &gt; </span><a href="http://www.ft.com/companies">Companies</a>
+ <span> &gt; </span><a href="http://www.ft.com/companies/energy">Energy</a>
+ <span> &gt; </span>
+ </p>
+-<div class="pagename"> 
++<div class="pagename">
+ <span data-pos="0" ><a href='http://www.ft.com/companies/mining'>Mining</a></span>
+ </div>
+ </div>	</div>
+@@ -143,14 +112,6 @@ FT.ads.request('intro');
+ <div class="searchContainer">
+ <input class="text ft-search-auto-completable" type="text" value="" name="queryText" id="simpleSearchField" autocomplete="off" />
+ <div id="searchbox" class="advertising">
+-<script>
+-/* <![CDATA[ */
+-var el = FT.$('#simpleSearchField');
+-if ( el.length && el.val() === '' ) {
+-FT.ads.request("searchbox");
+-}
+-/* ]]> */
+-</script>
+ </div>
+ </div>
+ <button type="submit" class="standardImage"><span><span>Search</span></span></button>
+@@ -167,8 +128,10 @@ FT.ads.request("searchbox");
+ </div>
+ <div class="ftLogin-loggedIn">
+ <span>
+-Welcome <span id="ftLogin-user"></span>
++Welcome <span id="ftLogin-user"><!-- FTHACK --> peter.oshaughnessy@pearson.com</span>
++<!--
+ <span id ="ftLogin-sub-link"><a href="http://registration.ft.com/registration/subscription-service/bpsp?segid=70152" class="subscriptionLink">Subscribe</a></span>
++-->
+ <a href="http://registration.ft.com/registration/selfcare/" id="ftLogin-yourAccount">Your account</a>
+ <a href="http://www.ft.com/tour">Site tour</a>
+ <a href="https://registration.ft.com/registration/login/logout?location=" id="ftLogin-logout">Sign out</a>
+@@ -203,17 +166,12 @@ Welcome <span id="ftLogin-user"></span>
+ </form>
+ </div>
+ </div>
+-<script>
+-FT.preInit.loginForm();
+-</script>
+ </div>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "2"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "3", keyType: "el"});</script>
+-<ul id="navigation" style="border-top-color:#9E2F50;" class="basic clearfix" data-comp-name="nav" data-comp-view="nav" data-comp-index="1" data-timer-key="3" >	
++<ul id="navigation" style="border-top-color:#9E2F50;" class="basic clearfix" data-comp-name="nav" data-comp-view="nav" data-comp-index="1" data-timer-key="3" >
+ <li class="
+-first-child " 
+-data-pos="0" ><a href="http://www.ft.com" ><span>Home</span><em>&#160;</em></a>	
++first-child "
++data-pos="0" ><a href="http://www.ft.com" ><span>Home</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -281,8 +239,8 @@ Today&rsquo;s Newspaper
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="1" ><a href="/world/uk" ><span>UK</span><em>&#160;</em></a>	
++"
++data-pos="1" ><a href="/world/uk" ><span>UK</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -322,8 +280,8 @@ UK Small Companies
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="2" ><a href="/world" ><span>World</span><em>&#160;</em></a>	
++"
++data-pos="2" ><a href="/world" ><span>World</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -471,8 +429,8 @@ The World Blog
+ </ul>
+ </li>
+ <li class="
+-nosub on " 
+-data-pos="3" ><a href="/companies" class="on" ><span>Companies</span><em>&#160;</em></a>	
++nosub on "
++data-pos="3" ><a href="/companies" class="on" ><span>Companies</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child on " >
+@@ -735,8 +693,8 @@ section last-child ">
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="4" ><a href="/markets" ><span>Markets</span><em>&#160;</em></a>	
++"
++data-pos="4" ><a href="/markets" ><span>Markets</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -908,8 +866,8 @@ Emerging Mkts / beyondbrics
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="5" ><a href="/global-economy" ><span>Global Economy</span><em>&#160;</em></a>	
++"
++data-pos="5" ><a href="/global-economy" ><span>Global Economy</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -977,8 +935,8 @@ US
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="6" ><a href="/lex" ><span>Lex</span><em>&#160;</em></a>	
++"
++data-pos="6" ><a href="/lex" ><span>Lex</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -1046,8 +1004,8 @@ Subscribe to Lex
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="7" ><a href="/comment" ><span>Comment</span><em>&#160;</em></a>	
++"
++data-pos="7" ><a href="/comment" ><span>Comment</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child " >
+@@ -1230,8 +1188,8 @@ Obituaries
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="8" ><a href="/management" ><span>Management</span><em>&#160;</em></a>	
++"
++data-pos="8" ><a href="/management" ><span>Management</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child " >
+@@ -1323,8 +1281,8 @@ The Connected Business
+ </ul>
+ </li>
+ <li class="
+-" 
+-data-pos="9" ><a href="/personal-finance" ><span>Personal Finance</span><em>&#160;</em></a>	
++"
++data-pos="9" ><a href="/personal-finance" ><span>Personal Finance</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child nosub " >
+@@ -1448,8 +1406,8 @@ Calculators
+ </ul>
+ </li>
+ <li class="
+-last-child " 
+-data-pos="10" ><a href="/arts-leisure" ><span>Life &amp; Arts</span><em>&#160;</em></a>	
++last-child "
++data-pos="10" ><a href="/arts-leisure" ><span>Life &amp; Arts</span><em>&#160;</em></a>
+ <ul class="subnav">
+ <li class="
+ first-child " >
+@@ -1619,107 +1577,9 @@ How To Spend It
+ </li>
+ </ul>
+ </li>
+-</ul> 
+-<script>
+-FT.preInit.distributeNavItems(document.getElementById("navigation"));
+-</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "3"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "4", keyType: "el"});</script>
++</ul>
+ <div class="freestyle" data-comp-name="freestyle" data-comp-view="freestyle" data-comp-index="2" data-timer-key="4" id="168514">
+-<script>
+-//<![CDATA[
+-FT = FT ? FT : {};
+-FT.storyTools = FT.storyTools ? FT.storyTools : {};
+-FT.storyTools.shareList = [
+-{
+-'id': 'twitter',
+-'label': 'Twitter',
+-'link' : 'https://twitter.com/intent/tweet?url={url}&text={title}&original_referer={originalUrl}&related={relatedAccts}&via=FT',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'facebook',
+-'label': 'Facebook',
+-'link': 'http://www.facebook.com/sharer.php?u={canonicalurl}&t={title}+|+{section}',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'googleplus',
+-'label': 'Google+',
+-'link': 'https://plus.google.com/share?url={url}',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'linkedin',
+-'label': 'LinkedIn',
+-'link' : 'http://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}+|+{section}&summary={summary}&source={source}',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'stumbleupon',
+-'label': 'StumbleUpon',
+-'link': 'http://www.stumbleupon.com/submit?url={url}&title={title}',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'reddit',
+-'label': 'Reddit',
+-'link': 'http://reddit.com/submit?url={url}&title={title}',
+-'size': 'height=436,width=646'
+-},
+-{
+-'id': 'tumblr',
+-'label': 'Tumblr',
+-'link': 'http://www.tumblr.com/share/link?url={url}&name={title}&description={summary}',
+-'size': 'height=436,width=646'
+-}
+-];
+-FT.storyTools.twitterList = [
+-{
+-"name": "World",
+-"value": "fttheworld" 
+-},
+-{
+-"name": "Companies",
+-"value": "ftcompanies" 
+-},
+-{
+-"name": "Economy",
+-"value": "ftuseconomy"
+-},
+-{
+-"name": "Lex",
+-"value": "helexcolumn" 
+-},
+-{
+-"name": "Management",
+-"value": "ftmanagement"
+-},
+-{
+-"name": "Life &amp; Arts",
+-"value": "ftlifeandarts" 
+-},
+-{
+-"name": "Alphaville",
+-"value": "ftalphaville" 
+-},
+-{
+-"name": "Beyond Bricks",
+-"value": "beyondbrics" 
+-},
+-{
+-"name": "Tech Hub",
+-"value": "fttechhub" 
+-} 
+-];
+-FT.storyTools.defaultTwitAct = {
+-"name": "fttheworld" 
+-};
+-//]]>
+-</script>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "4"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "5", keyType: "el"});</script>
+ <div class="fullstory fullstoryHeader" data-comp-name="fullstory" data-comp-view="fullstory_title" data-comp-index="3" data-timer-key="5">
+ <ul id="ft-story-tools-top" class="storyTools">
+ <li class="linkButton shareButton">
+@@ -1754,18 +1614,17 @@ FT.storyTools.defaultTwitAct = {
+ <p class="byline ">
+ <span>By Lina Saigol and Anousha Sakoui</span></p>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "5"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "1"});</script>
+ </div>
+ <div class="master-column middleSection " data-zone="middleSection" data-timer-key="6">
+ <div class="master-row contentSection " data-zone="contentSection" data-timer-key="7">
+ <div class="master-row editorialSection" data-zone="editorialSection" data-timer-key="8">
+-<script>FT.$doc.trigger("pgObjStart", {key: "8", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "9", keyType: "el"});</script>
+ <div class="fullstory fullstoryBody" data-comp-name="fullstory" data-comp-view="fullstory" data-comp-index="0" data-timer-key="9">
+ <div id="storyContent"><p>The independent board of <a class="wsodCompany" data-hover-chart="uk:ENRC" href="http://markets.ft.com/tearsheets/performance.asp?s=uk:ENRC">Eurasian Natural Resources Corp </a>has rejected a proposed offer by the embattled London-listed miner’s billionaire founding shareholders to take it private.</p>
+ <p>Alexander Mashkevich, Alijan Ibragimov and Pathokh Chodiev made their offer on Friday, comprising 175p in cash and 0.231 of an existing <a class="wsodCompany" data-hover-chart="uk:KAZ" href="http://markets.ft.com/tearsheets/performance.asp?s=uk:KAZ">Kazakhmys </a>share for each ENRC share and valuing the group at just under $5bn.</p>
+-<div class="insideArticleShare"><ul><!----></ul></div><div class="story-package"><div class="insideArticleCompHeader"><h3 class="insideArticleCompHeaderTitle">More</h3></div><h4>On this story</h4><ul><li> <a href="http://www.ft.com/cms/s/0/d4c58c0c-bf06-11e2-a9d4-00144feab7de.html">ENRC consortium given buyout extension</a></li><li> <a href="http://www.ft.com/cms/s/0/0354fa04-bef7-11e2-a9d4-00144feab7de.html">Backlash to hit scandal-tainted City</a></li><li>Interactive <a href="http://www.ft.com/cms/s/0/4fb39276-b564-11e2-850d-00144feabdc0.html">ENRC profiles</a></li><li> <a href="http://www.ft.com/cms/s/0/11386b70-b8cf-11e2-a6ae-00144feabdc0.html">ENRC revenues hit by fall in commodities</a></li></ul><h4>On this topic</h4><ul><li> <a href="http://www.ft.com/cms/s/0/2f7c7174-bf07-11e2-87ff-00144feab7de.html">New money put City’s reputation at risk</a></li><li>Lombard <a href="http://www.ft.com/cms/s/0/b1b814f0-bc7c-11e2-9519-00144feab7de.html">Severn Trent / Betfair / ENRC</a></li><li> <a href="http://www.ft.com/cms/s/0/6507a24e-b97d-11e2-bc57-00144feabdc0.html">Decision time looms over ENRC move</a></li><li>Comment <a href="http://www.ft.com/cms/s/0/467985e6-b981-11e2-9a9f-00144feabdc0.html">City grandee warned over governance</a></li></ul><h4>IN Mining</h4><ul><li> <a href="http://www.ft.com/cms/s/0/d0ab64a4-bef5-11e2-87ff-00144feab7de.html">Week in review, May 18</a></li><li> <a href="http://www.ft.com/cms/s/0/750d99c4-bec7-11e2-87ff-00144feab7de.html">Profit warnings hit Australian resources</a></li><li> <a href="http://www.ft.com/cms/s/0/62c6b4c2-be94-11e2-9b27-00144feab7de.html">Caterpillar settles with former ERA owners</a></li><li> <a href="http://www.ft.com/cms/s/0/3cd34834-be49-11e2-9b27-00144feab7de.html">Magnitude of coup has few precedents</a></li></ul></div><p>That was rejected by ENRC’s seven-strong independent committee on Monday on the grounds that it “materially undervalued” the FTSE 100 miner.</p>
++<div class="insideArticleShare"><!--<ul>--><!----><!--</ul>-->
++    <!-- FTHACK -->
++    <button id="ftHackShare">Share</button>
++    <!--<img src="img/share.png" alt="FT"/>--></div><div class="story-package"><div class="insideArticleCompHeader"><h3 class="insideArticleCompHeaderTitle">More</h3></div><h4>On this story</h4><ul><li> <a href="http://www.ft.com/cms/s/0/d4c58c0c-bf06-11e2-a9d4-00144feab7de.html">ENRC consortium given buyout extension</a></li><li> <a href="http://www.ft.com/cms/s/0/0354fa04-bef7-11e2-a9d4-00144feab7de.html">Backlash to hit scandal-tainted City</a></li><li>Interactive <a href="http://www.ft.com/cms/s/0/4fb39276-b564-11e2-850d-00144feabdc0.html">ENRC profiles</a></li><li> <a href="http://www.ft.com/cms/s/0/11386b70-b8cf-11e2-a6ae-00144feabdc0.html">ENRC revenues hit by fall in commodities</a></li></ul><h4>On this topic</h4><ul><li> <a href="http://www.ft.com/cms/s/0/2f7c7174-bf07-11e2-87ff-00144feab7de.html">New money put City’s reputation at risk</a></li><li>Lombard <a href="http://www.ft.com/cms/s/0/b1b814f0-bc7c-11e2-9519-00144feab7de.html">Severn Trent / Betfair / ENRC</a></li><li> <a href="http://www.ft.com/cms/s/0/6507a24e-b97d-11e2-bc57-00144feabdc0.html">Decision time looms over ENRC move</a></li><li>Comment <a href="http://www.ft.com/cms/s/0/467985e6-b981-11e2-9a9f-00144feabdc0.html">City grandee warned over governance</a></li></ul><h4>IN Mining</h4><ul><li> <a href="http://www.ft.com/cms/s/0/d0ab64a4-bef5-11e2-87ff-00144feab7de.html">Week in review, May 18</a></li><li> <a href="http://www.ft.com/cms/s/0/750d99c4-bec7-11e2-87ff-00144feab7de.html">Profit warnings hit Australian resources</a></li><li> <a href="http://www.ft.com/cms/s/0/62c6b4c2-be94-11e2-9b27-00144feab7de.html">Caterpillar settles with former ERA owners</a></li><li> <a href="http://www.ft.com/cms/s/0/3cd34834-be49-11e2-9b27-00144feab7de.html">Magnitude of coup has few precedents</a></li></ul></div><p>That was rejected by ENRC’s seven-strong independent committee on Monday on the grounds that it “materially undervalued” the FTSE 100 miner.</p>
+ <p>At the time the proposal was presented, it referenced a Kazakhmys share price of 370p a share, which together with the 175p a share in cash represented a total price of 260p for each ENRC share. </p>
+ <p>The offer represents a premium of about 7.3 per cent to ENRC’s closing price of 230p on April 18, the day before the bidding group announced it may make an offer.</p>
+ <p>However on a 30-trading day average before the announcement, ENRC shares were valued at 277p, which with a standard 30 per cent premium in a takeover would yield 360p. </p>
+@@ -1800,56 +1659,71 @@ Please don't cut articles from FT.com and redistribute by email or post to the w
+ </ul>
+ <div id="inferno-input"></div><div id="inferno-comments"></div>
+ </div>
+-<script>
+-FT.$(function() {
+-var script = document.createElement('script');
+-script.type = 'text/javascript';
+-script.async = "async";
+-script.src = 'http://'+FT.Properties.ASSANKA_ANNOTATION_HOST+'/resources/javascript/bootstrap';
+-document.getElementsByTagName("head")[0].appendChild(script);
+-});
+-</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "9"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "8"});</script>
+-</div>
+ <div class="master-row marketingSection" data-zone="marketingSection" data-timer-key="10">
+-<script>FT.$doc.trigger("pgObjStart", {key: "10", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "10"});</script>
+ </div>
+ </div>
+ <div class="master-row topAds" data-zone="topAdSection" data-timer-key="11">
+-<script>FT.$doc.trigger("pgObjStart", {key: "11", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "12", keyType: "el"});</script>
+-<div id="banlb" class="advertising" data-comp-name="advert" data-comp-view="advert" data-comp-index="0" data-timer-key="12">
+-<script>
+-FT.ads.request("banlb");
+-</script>
+-<noscript>
+-<a href="http://ad.doubleclick.net/N5887/jump/ftcom.5887.companies/energy-mining;sz=468x60,728x90;pos=banlb;tile=1;nojs=1?" target="_blank">
+-<img src="http://ad.doubleclick.net/N5887/ad/ftcom.5887.companies/energy-mining;sz=468x60,728x90;pos=banlb;tile=1;nojs=1?" border="0" alt="Advertisement" />
+-</a>
+-</noscript>
++<img src="img/header-ads.png" alt=""/>
+ </div>
+-<div id="newssubs" class="advertising">
+-<script>
+-FT.ads.requestNewssubs();
+-</script>
+-</div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "12"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "11"});</script>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "perceivedLoadTime"});</script>
+ <div id="railBg"></div>
+ <div class="master-row railSection" data-zone="railSection" data-timer-key="13">
+-<script>FT.$doc.trigger("pgObjStart", {key: "13", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "14", keyType: "el"});</script>
++<!-- FTHACK -->
++<div id="ftHackSharePanel">
++    <div class="comp-header">
++        <h3 class="comp-header-title">
++            SHARE
++        </h3>
++    </div>
++    <div class="contents">
++        <h4 class="title"></h4>
++        <h5 class="subtitle"></h5>
++        <div class="paras"></div>
++    </div>
++    <div class="shareButtons">
++        <img class="fb-share" src="img/fb-share.png"/>
++        <!--<a href="#" class="twitter-share-button">Tweet</a>-->
++        <img class="twitter-share" src="img/twitter-share.png"/>
++        <img class="gplus-share" src="img/gplus-share.png"/>
++    </div>
++</div>
++<div id="ftHackDefaultPanel">
+ <div id="tlbxrib" class="advertising" data-comp-name="advert" data-comp-view="advert" data-comp-index="0" data-timer-key="14">
+-<script>
+-FT.ads.request("tlbxrib");
+-</script>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "14"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "15", keyType: "el"});</script>
++<div class="editorialDoublet" data-comp-name="editorialDoublet"
++     data-comp-view="editorialDoublet" data-comp-index="1" data-timer-key="15">
++    <div class="comp-header">
++        <h3 class="comp-header-title" data-pos="0">
++            EDITOR&rsquo;S CHOICE
++        </h3>
++    </div>
++    <div class="doublet">
++        <div class="doublet-column" data-pos="1">
++            <div class="doublet-content">
++                <h4><a href="http://blogs.ft.com/fttechhub" class="label"><span>Tech blog</span></a></h4>
++<span class="story-image">
++<a href="http://blogs.ft.com/fttechhub">
++    <img src="http://im.ft-static.com/content/images/cbf8acfc-5cbb-11e1-ac80-00144feabdc0.img" alt="Tech Hub">
++</a>
++</span>
++                <a href="http://blogs.ft.com/fttechhub">
++                    <span class="content">FT experts around the world share their views</span>
++                </a>
++            </div>	</div>
++        <div class="doublet-column" data-pos="2">
++            <div class="doublet-content">
++                <h4><a href="http://blogs.ft.com/fttechhub/category/personal-technology/" class="label"><span>Personal Technology</span></a></h4>
++<span class="story-image">
++<a href="http://blogs.ft.com/fttechhub/category/personal-technology/">
++    <img src="http://im.ft-static.com/content/images/3456e264-3067-11e0-8d80-00144feabdc0.img" alt="Chris Nuttall">
++</a>
++</span>
++                <a href="http://blogs.ft.com/fttechhub/category/personal-technology/">
++                    <span class="content">Chris Nuttall reviews the latest trends in tech</span>
++                </a>
++            </div>	</div>
++    </div>
++</div>
+ <div class="railMiniVideo" data-comp-name="railminivideo" data-comp-view="railminivideo" data-comp-index="1" data-timer-key="15">
+ <div class="comp-header">
+ <h3 class="comp-header-title" data-pos="0">
+@@ -1858,61 +1732,20 @@ COMPANIES VIDEOS
+ </a>
+ </h3>
+ </div>
+-<noscript>
+-<div class="railMiniVideo-player-nojs">
+-You need JavaScript active on your browser in order see this video.
+-</div>
+-</noscript>
+ <div class="railMiniVideo-player" style="height:365px">
+-<!-- Start of Brightcove Player -->
+-<div style="display:none">
+-</div>
+-<object id="myExperience" class="BrightcoveExperience">
+-<param name="bgcolor" value="#00000" />
+-<param name="width" value="332" />
+-<param name="height" value="365px" />
+-<param name="playerID" value="1820439059001" />
+-<param name="publisherID" value="46412932001" />
+-<param name="isVid" value="true" />
+-<param name="isUI" value="true" />
+-<param name="dynamicStreaming" value="true" />
+-<param name="@videoList" value="ref:companies" />
+-<param name="playerKey" value="AQ~~,AAAACxbljZk~,eD0zYozylZ2BGOo7AxcJk7QiRt45zQkF" /> <param name="wmode" value="transparent" />
+-</object>
+-<!-- End of Brightcove Player -->
+-<script>
+-BrightcoveFT.Init.createExperience('myExperience');
+-</script>
++    <!-- Start of Brightcove Player -->
++    <div style="display:none">
++    </div>
++    <object type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=332&amp;height=365px&amp;flashID=myExperience&amp;bgcolor=%2300000&amp;playerID=1820439059001&amp;publisherID=46412932001&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;%40videoList=ref%3Acompanies&amp;playerKey=AQ~~%2CAAAACxbljZk~%2CeD0zYozylZ2BGOo7AxcJk7QiRt45zQkF&amp;wmode=transparent&amp;autoStart=&amp;debuggerID=&amp;startTime=1369068364932" id="myExperience" width="332" height="365px" class="BrightcoveExperience" seamlesstabbing="undefined"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="transparent"><param name="quality" value="high"><param name="bgcolor" value="#00000"></object>
++    <!-- End of Brightcove Player -->
+ </div>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "15"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "16", keyType: "el"});</script>
+ <div id="hlfmpu" class="advertising" data-comp-name="advert" data-comp-view="advert" data-comp-index="2" data-timer-key="16">
+-<script>
+-FT.ads.request("hlfmpu");
+-</script>
+-<noscript>
+-<a href="http://ad.doubleclick.net/N5887/jump/ftcom.5887.companies/energy-mining;sz=300x600,336x850,300x250,336x280;pos=hlfmpu;tile=2;nojs=1?" target="_blank">
+-<img src="http://ad.doubleclick.net/N5887/ad/ftcom.5887.companies/energy-mining;sz=300x600,336x850,300x250,336x280;pos=hlfmpu;tile=2;nojs=1?" border="0" alt="Advertisement" />
+-</a>
+-</noscript>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "16"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "17", keyType: "el"});</script>
+ <div id="doublet" class="advertising">
+-<script>
+-FT.ads.request("doublet");
+-</script>
+-</div> 
+-<script>FT.$doc.trigger("pgObjStop", {key: "17"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "18", keyType: "el"});</script>
++</div>
+ <div id="mpu" class="advertising" data-comp-name="advert" data-comp-view="advert" data-comp-index="4" data-timer-key="18">
+-<script>
+-FT.ads.request("mpu");
+-</script>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "18"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "19", keyType: "el"});</script>
+ <div class="partnerLinks" data-comp-name="railFeedsBox" data-comp-view="partnerLinks" data-comp-index="5" data-timer-key="19">
+ <div class="comp-header">
+ <h3 class="comp-header-title" data-pos="0">
+@@ -1949,8 +1782,6 @@ US Stocks Seen Down on Fed Easing Fears
+ </li>
+ </ul>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "19"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "20", keyType: "el"});</script>
+ <div class="jobsBox" data-comp-name="railFeedsBox" data-comp-view="jobsbox" data-comp-index="6" data-timer-key="20">
+ <div class="comp-header">
+ <h3 class="comp-header-title" data-pos="0">
+@@ -1998,8 +1829,6 @@ Register for free to receive the latest executive jobs by email
+ </a>
+ </div>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "20"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "21", keyType: "el"});</script>
+ <div class="toolsandservices" data-comp-name="toolsandservices" data-comp-view="toolsandservices" data-comp-index="7" data-timer-key="21" >
+ <div class="comp-header">
+ <h3 class="comp-header-title">TOOLS &amp; SERVICES</h3>
+@@ -2007,7 +1836,7 @@ Register for free to receive the latest executive jobs by email
+ <div class="tools-column">
+ <h3 class="tools-heading" data-pos="0">
+ Multimedia
+-</h3> 
++</h3>
+ <ul>
+ <li data-pos="1">
+ <a href="http://www.ft.com/video" >
+@@ -2042,7 +1871,7 @@ Picture slideshows
+ </ul>
+ <h3 class="tools-heading" data-pos="7">
+ Tools
+-</h3> 
++</h3>
+ <ul>
+ <li data-pos="8">
+ <a href="http://markets.ft.com/portfolio/all.asp?segid=70112" >
+@@ -2102,7 +1931,7 @@ Economic calendar
+ </ul>
+ <h3 class="tools-heading" data-pos="19">
+ Updates
+-</h3> 
++</h3>
+ <ul>
+ <li data-pos="20">
+ <a href="http://markets.ft.com/alerts/keyword.asp" >
+@@ -2140,7 +1969,7 @@ Share prices on your phone
+ <div class="tools-column">
+ <h3 class="tools-heading" data-pos="26">
+ Quick links
+-</h3> 
++</h3>
+ <ul>
+ <li data-pos="27">
+ <a href="http://www.ft.com/mergermarket" >
+@@ -2210,7 +2039,7 @@ Pensions Week
+ </ul>
+ <h3 class="tools-heading" data-pos="40">
+ Services
+-</h3> 
++</h3>
+ <ul>
+ <li data-pos="41">
+ <a href="https://www.ftnewspaper.com/map3" >
+@@ -2288,15 +2117,12 @@ FT Collection
+ </a>
+ </li>
+ </ul>
+-</div> 
+-</div> 
+-<script>FT.$doc.trigger("pgObjStop", {key: "21"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "13"});</script>
++</div>
++</div>
++</div>
+ </div>
+ </div>
+ <div class="master-row bottomSection " data-zone="bottomSection" data-timer-key="22">
+-<script>FT.$doc.trigger("pgObjStart", {key: "22", keyType: "el"});</script>
+-<script>FT.$doc.trigger("pgObjStart", {key: "23", keyType: "el"});</script>
+ <div class="freestyle" data-comp-name="freestyle" data-comp-view="freestyle" data-comp-index="0" data-timer-key="23" id="156239">
+ <div id="footer">
+ <div id="content">
+@@ -2310,20 +2136,6 @@ FT Collection
+ <li>&#8226;<a href="http://www.ft.com/servicestools/help/privacy">Privacy policy</a></li>
+ <li>&#8226;<a href="http://www.ft.com/servicestools/help/copyright">Copyright</a></li>
+ <li id="footerCookiePolicy">&#8226;<a href="http://www.ft.com/cookiepolicy">Cookie policy</a></li>
+-<script>
+-/* <![CDATA[
+-FT.FooterAdChoiceLink = '<li id="footerAdChoices">&#8226;<a href="http://www.youronlinechoices.eu">AdChoices</a></li>';
+-if (typeof FT.render.user.isUserInEU === 'function' && FT.render.user.isUserInEU()) {
+-document.write(FT.FooterAdChoiceLink);
+-}
+-$(window).load(function() {
+-FT.lib.hashCookies();
+-if (typeof FT.render.user.isUserInEU === 'function' && FT.render.user.isUserInEU() && !$('#footerAdChoices').length) {
+-$(FT.FooterAdChoiceLink).insertAfter('#footerCookiePolicy');
+-}
+-});
+-]]> */
+-</script>
+ </ul>
+ <p>
+ <span class="copyright"><strong>&#169; The Financial Times Ltd 2013 </strong></span>
+@@ -2333,19 +2145,11 @@ $(FT.FooterAdChoiceLink).insertAfter('#footerCookiePolicy');
+ </div>
+ </div>
+ </div>
+-<script>FT.$doc.trigger("pgObjStop", {key: "23"});</script>
+-<script>FT.$doc.trigger("pgObjStop", {key: "22"});</script>
+ </div>
+ <div class="adRequests">
+ <div id="corppop">
+-<script>
+-FT.ads.request('corppop');
+-</script>
+ </div>
+ <div id="refresh">
+-<script>
+-FT.ads.request('refresh');
+-</script>
+ </div>
+ </div>
+ </div>
+@@ -2365,16 +2169,7 @@ and &lsquo;Financial Times&rsquo; are trademarks of The Financial Times Ltd.
+ </p>
+ </div>
+ <div id="oob">
+-<script>
+-FT.ads.request('oob');
+-</script>
+ </div>
+-<script src="http://s2.ft-static.com/scripts/f19e812d/bundles/coreFoot.js"></script>
+-<script src="http://s2.ft-static.com/scripts/c8bfb02/bundles/articleFoot.js"></script>
+ <!--ft:footWrapperJs-->
+-<script>
+-var InfernoConfig = {commentcontainer:"inferno-comments",inputuicontainer:"inferno-input",user:"FTDam",thiscontent:"aa11044c-c126-11e2-9767-00144feab7de",site:"15",output:{format:'iframe',themed:true, theme:"ft/new"}};
+-</script>
+-<script src="http://inferno.t.ft.com/commentlib2?defer=onloadforie"></script>
+ </body>
+ </html>

@@ -1,5 +1,5 @@
 #ftHackSharePanel {
-	display: none;
+    width: 352px;
 }
 #ftHackSharePanel .contents {
 	padding: 10px;
@@ -44,6 +44,11 @@
 #ftHackShare {
 	background:url(/img/share_button.png) no-repeat;
 	width: 186px;
-	height: 55px;
+    height: 35px;
+    border: none;
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
 }
