@@ -4,47 +4,58 @@
  * LICENSE file.
  */
 
-  // The regular expression produced a match, so notify the background page.
-  var apiURLRoot = "http://api.ft.com/content/items/v1/";
-  var apiKey = "74ceebd2d62ad1e882862db317e2fb95";
-  var apiUUID = $('body').data('article-uid');
-  var apiURL = apiURLRoot + apiUUID + '?apiKey=' + apiKey;
+var head = "<!-- FTHACK Code --> \
+ <script src='http://localhost:9292/js/fthack.js'></script> \
+    <style> \
+        #ftHackSharePanel { \
+            display: none; \
+        } \
+        #ftHackSharePanel .contents { \
+            padding: 10px; \
+        } \
+        #ftHackSharePanel h5 { \
+            font-size: 1.1em; \
+            margin: 1em 0; \
+        } \
+        #ftHackSharePanel .shareButtons { \
+            padding: 0 10px; \
+        } \
+        #ftHackSharePanel p { \
+            margin-bottom: 1em; \
+        } \
+        .container .editorialSection p.fade, \
+        .container .editorialSection p.fade a { \
+            color: #ccc; \
+        } \
+        .ftLogin-loggedIn { \
+            display: block !important; \
+        } \
+        .ftLogin-loggedOut { \
+            display: none !important; \
+        } \
+    </style>";
 
-	$.getJSON(apiURL, function() {
-	console.log( "success" );
-	})
-	.done(function(jqxhr) {
-		// get organisations and people, limited to 5
-		var organisations = jqxhr.item.metadata.organisations;
-		var people = jqxhr.item.metadata.people;
+    var panel = "<!-- FTHACK --> \
+    <div id='ftHackSharePanel'> \
+        <div class='comp-header'> \
+            <h3 class='comp-header-title'> \
+                SHARE \
+            </h3> \
+        </div> \
+        <div class='contents'> \
+            <h4 class='title'></h4> \
+            <h5 class='subtitle'></h5> \
+            <div class='paras'></div> \
+        </div> \
+        <div class='shareButtons'> \
+            <img class='fb-share' src='img/fb-share.png'/> \
+            <img class='twitter-share' src='img/twitter-share.png'/> \
+            <img class='gplus-share' src='img/gplus-share.png'/> \
+        </div> \
+    </div>";
 
-		$(".insideArticleShare").append('Organisations to follow');
-
-		for (var i = 0; i < organisations.length; i++) {
-			$(".insideArticleShare").append('<li class="js-link-follow" data-follow="' + organisations[i].term.name + '">' + organisations[i].term.name + '</li>');
-		}
-
-		$(".insideArticleShare").append('People to follow');
-
-		for (i = 0; i < people.length; i++) {
-			$(".insideArticleShare").append('<li>' + people[i].term.name + '</li>');
-		}
-
-		// Add click handler
-		document.querySelector('.js-link-follow').addEventListener('click', clickHandler);
-
-
-		chrome.extension.sendRequest({}, function(response) {});
-	})
-	.fail(function() { console.log( "error" ); });
-
-
-// Reset height
-$('.insideArticleShare').css( "height", "100%" );
-
-
-function clickHandler(e) {
-  alert('Following');
-}
-
-
+  $('head').append(head);
+  $('railMiniVideo').replace(panel);
+  $('.twitter').attr('id','ftHackShare');
+  $('.twitter a').remove();
+  $('.twitter').append('<a href="javascript:share()"');
