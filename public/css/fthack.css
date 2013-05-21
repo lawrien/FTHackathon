@@ -44,8 +44,8 @@
 #ftHackShare {
 	background:url(/img/share_button.png) no-repeat;
 	width: 186px;
-	height: 55px;
-
+    height: 35px;
+    border: none;
 }
 
 .sticky {
