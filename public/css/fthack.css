@@ -1,5 +1,5 @@
 #ftHackSharePanel {
-	display: none;
+    width: 352px;
 }
 #ftHackSharePanel .contents {
 	padding: 10px;
@@ -46,4 +46,9 @@
 	width: 186px;
 	height: 55px;
 
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }

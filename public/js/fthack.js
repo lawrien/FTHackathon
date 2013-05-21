@@ -15,6 +15,19 @@ function init() {
 
     });
 
+    var $sharePanel = $('#ftHackSharePanel');
+    var origOffsetY = $sharePanel[0].offsetTop;
+    $sharePanel.hide();
+
+    function onScroll(e) {
+        if( $sharePanel.is(':visible') ) {
+            window.scrollY >= origOffsetY ? $sharePanel.addClass('sticky') :
+                    $sharePanel.removeClass('sticky');
+        }
+    }
+
+    document.addEventListener('scroll', onScroll);
+
 }
 
 function share() {
