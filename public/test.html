@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>#{attr['item']['title']['title']}</title>
+	   <meta charset="utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	   <meta name="description" content="#{attr['item']['summary']['excerpt']}" />
+	   <meta name="author" content="#{attr['item']['editorial']['byline']}" />
+	<!--<link rel='stylesheet' href='css/link.css' media="all"/>-->
+	<style>
+		html {
+			background-color: #fff1e0;
+			color: black;
+			font-family: "Helvetica", "Arial", sans-serif;
+		}
+		h1 {
+			margin: 25px 10px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p {
+			margin: 10px;
+			font-size: 18px;
+		}
+		p:last-child {
+			color: #888;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+       #{ output }
+</body>
+</html>
